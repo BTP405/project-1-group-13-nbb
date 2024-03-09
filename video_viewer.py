@@ -4,10 +4,11 @@ import streamlit as st
 import os
 import io
 from video_editing_functions import *
-import cred
+
 
 # Connect to MongoDB
-client = cred.connection
+client = MongoClient("mongodb+srv://muhsinbaksh04:ltz2qoZ6F5mriq3h@cluster0.polmgu9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+
 db = client.get_database("BTP425")
 fs = GridFS(db)
 

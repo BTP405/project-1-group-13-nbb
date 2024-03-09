@@ -2,41 +2,82 @@
 
 ### Please use the following template to add a ReadMe for your repo.
 
-## 1. Project Title and Description
-    - Title: Python Video Player and Editor
-    - Description: Users are able to upload videos to this application and perform a variety of edits on the video like concact two videos together, trim a video, invert the colors, adjust speed, and mirror the video.
-## 2. Installation
-    - Dependencies: 
-        1) from pymongo import MongoClient
-        2) from gridfs import GridFS
-        3) import streamlit as st
-        4) import os
-        5) import io
-        6) from video_editing_functions import *
-        7) import cred - this is a custom python file. we made this file in which we stored the private connection string, then added this cred.py file to gitignore. 
-    - Installation Instructions: Provide step-by-step instructions on how to install and set up your project.
-## 3. Usage
-    - Examples: Include examples or code snippets to demonstrate how to use your project.
-    - Configuration: Explain any configuration options or settings users might need to know about.
-## 4. Features
-    - List of Features: Outline the main features and functionalities of your project.
-## 5. Contributing
-    - Guidelines: Explain how others can contribute to your project, including information on submitting bug reports, feature requests, or code contributions.
-    - Code Style: If applicable, provide guidelines or references to your code style.
-## 6. Credits
-    - Authors: List the authors or contributors of the project.
-    - Acknowledgments: Mention any individuals or resources that helped inspire or support your project.
-## 7. License
-    - License Information: Specify the license under which your project is distributed.
-## 8. Additional Sections (Optional)
-    - FAQ: Include frequently asked questions and their answers.
-    - Troubleshooting: Provide solutions to common issues or troubleshooting tips.
-    - Roadmap: Outline the future development plans for your project.
-    - Changelog: Document changes and updates to your project over time.
+# Title: Video Editor Application
+## Description:
+### Our video editor app lets a user input their username and upload videos to the application for editing purposes. The user can then see all uploaded videos under their user name
 
-## Markdown Formatting Tips
-  - Use headings (#, ##, ###, etc.) to structure your document.
-  - Utilize lists (- or 1.) for easy-to-read information.
-  - Include links to relevant resources or documentation.
-  - Add code blocks using triple backticks (```) for code snippets.
-  - Use images or diagrams to enhance understanding where applicable.
+## Dependencies
+streamlit==1.31.0
+pymongo==4.2.0
+moviepy==1.0.3
+
+## Usage
+- navigate to the project folder
+- start a new local environment
+### windows
+#### create it
+```
+python3 -m venv venv
+```
+
+
+#### activate it
+```
+venv\Scripts\activate
+```
+
+### MacOS
+#### Create it
+```
+python3 -m venv venv
+```
+
+#### activate it
+```
+	source venv/bin/activate
+```
+
+### Install packages
+
+Either install individually
+
+```
+(venv) $ python3 -m pip install <package-name>
+```
+
+ or use the included requirements.txt file to install all dependencies at once
+ ```
+ (venv) $ python3 -m pip install -r ./requirements.txt
+```
+
+### Start the program
+
+Start the program using this line of code
+
+```
+python3 -m streamlit run video_viewer.py
+```
+## Features
+
+The main features are the video editing functions, such as
+
+- concatenation
+
+- mirroring
+
+- colour inverting
+
+- video trimming and
+
+- adjusting the video speed.
+
+- These functions were all done by using pythons moviepy library. Other features are the ability to automatically save to database edited files under a user's name, and to be able to show all files that are in the database for one user. This was done by using GridFS to save the video files to the database, and using functions to sort through users and display the videos. The video editor allows the user to upload files from their desktops, then enter a users name, and do all of the moviepy functions mentioned above, allows them to write a name for their edited video file, and displays the completed video after editing and gives the option for downloading the file.
+
+### Contributing
+
+Others can contribute to the project by submitting bug reports when needed
+
+### Credits
+Abdulmuhsin Baksh
+Ahmed Hafiz Shaikh
+Joshua Dinham
