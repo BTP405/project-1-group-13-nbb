@@ -3,10 +3,17 @@
 ### Please use the following template to add a ReadMe for your repo.
 
 ## 1. Project Title and Description
-    - Title: Provide a clear and concise title for your project.
-    - Description: Give a brief overview of what your project does and its purpose.
+    - Title: Python Video Player and Editor
+    - Description: Users are able to upload videos to this application and perform a variety of edits on the video like concact two videos together, trim a video, invert the colors, adjust speed, and mirror the video.
 ## 2. Installation
-    - Dependencies: List any dependencies or prerequisites required to use your project.
+    - Dependencies: 
+        1) from pymongo import MongoClient
+        2) from gridfs import GridFS
+        3) import streamlit as st
+        4) import os
+        5) import io
+        6) from video_editing_functions import *
+        7) import cred - this is a custom python file. we made this file in which we stored the private connection string, then added this cred.py file to gitignore. 
     - Installation Instructions: Provide step-by-step instructions on how to install and set up your project.
 ## 3. Usage
     - Examples: Include examples or code snippets to demonstrate how to use your project.
