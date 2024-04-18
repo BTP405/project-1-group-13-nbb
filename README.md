@@ -15,12 +15,15 @@ moviepy==1.0.3
 
 #### 1) On Render
 You can run Render based on Github or Docker.
+
 The Github Deployment Link: https://btp405project-7.onrender.com/
+
 The Docker Deployment link: https://video-viewer-1.onrender.com/
 
 
 #### 2) On Docker
 To run the project on Docker, open up your Docker Account and run the following command:
+
 docker run -p 8501:8501dockerjoshuad/video_viewer 
 
 #### 3) Locally
