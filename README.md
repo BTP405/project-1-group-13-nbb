@@ -12,7 +12,7 @@ pymongo==4.2.0
 moviepy==1.0.3
 
 ## Usage - You can run the Project in three ways: 
-# 1) On Render (Free Herkou Alternative)     2) On docker    3) In a local enviorment
+### 1) On Render (Free Herkou Alternative)     2) On docker    3) In a local enviorment
 
 #### 1) On Render
 You can run Render based on Github or Docker.
