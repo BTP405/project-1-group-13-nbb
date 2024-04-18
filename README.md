@@ -13,12 +13,17 @@ moviepy==1.0.3
 
 ## Usage - You can run the Project in three ways: 1) On Render (Free Herkou Alternative)  2) On docker 3) In a local enviorment
 
-#### 1) 
-The Link to run it on Render is:
+#### 1) On Render
+You can run Render based on Github or Docker.
+The Github Deployment Link: https://btp405project-7.onrender.com/
+The Docker Deployment link: https://video-viewer-1.onrender.com/
 
 
-#### 2) 
-To run the project on Docker, 
+#### 2) On Docker
+To run the project on Docker, open up your Docker Account and run the following command:
+docker run -p 8501:8501dockerjoshuad/video_viewer 
+
+#### 3) Locally
 - navigate to the project folder
 - start a new local environment
 ### windows
