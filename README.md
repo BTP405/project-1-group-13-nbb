@@ -21,6 +21,8 @@ The Github Deployment Link: https://btp405project-7.onrender.com/
 
 The Docker Deployment link: https://video-viewer-1.onrender.com/
 
+Note: We have used the free-teir for Render, hence sometimes it takes long to load, or doesn't load and will require a refresh (as noted on their website). That's why in our demo we have showed all the features working on Render. 
+
 
 #### 2) On Docker
 To run the project on Docker, open up your Docker Account and run the following command:
@@ -127,6 +129,12 @@ You may encounter the following errors
 ### Connection Error Status 502
 
 This error happens if the application loses connection to the Streamlit Servers. Reloading the application by refreshing the page or clicking the options in the top right corner of the webpage and clicking "Rerun" will allow you to reconnect and try again
+
+## Unit Testing:
+
+For Unit Testing we have the file _test.py. This file automatically tests all features with the "video.mp4" file. This video file was not able to be uploaded on to Github, so running the tests online will result in failure. 
+
+Note: When running the unit tests locally, the test would create the edited video files, but after creating them, the test would delay for a long time (hang), and after a lot of effort, this remains unsolved still. Although the "passed" messages won't be seen by running the unit tests, but the edited video functions will be created, which is proof of the functions and features of the program working. 
 
 ### Contributing
 
