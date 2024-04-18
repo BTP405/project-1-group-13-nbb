@@ -66,6 +66,7 @@ If you have used the app before and have saved videos, clicking Show my Videos w
 <details><summary> Show My Videos </summary>
 <img width="550" alt="video_viewer-show-my-videos" src="https://github.com/BTP405/project-1-group-13-nbb/assets/122370310/aff44d82-70be-4fb1-b02a-819263f7bd41">
 </details>
+
 ## Concatenation
 
 Concatenation allows you to append 1 video to another video. Using this feature is simple. Dragging and dropping your first video will allow you to quickly preview the video before you drag and drop the second one.
