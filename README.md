@@ -11,7 +11,14 @@ streamlit==1.31.0
 pymongo==4.2.0
 moviepy==1.0.3
 
-## Usage
+## Usage - You can run the Project in three ways: 1) On Render (Free Herkou Alternative)  2) On docker 3) In a local enviorment
+
+#### 1) 
+The Link to run it on Render is:
+
+
+#### 2) 
+To run the project on Docker, 
 - navigate to the project folder
 - start a new local environment
 ### windows
