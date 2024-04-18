@@ -57,21 +57,59 @@ Start the program using this line of code
 ```
 python3 -m streamlit run video_viewer.py
 ```
-## Features
+## Features and Usage
 
-The main features are the video editing functions, such as
+Start by first entering your name and pressing "Show my Videos". 
+This will enter your name into the database and all videos used in the program will be associated with that name
 
-- concatenation
+If you have used the app before and have saved videos, clicking Show my Videos will display them:
+<details><summary> Show My Videos </summary>
+<img width="550" alt="video_viewer-show-my-videos" src="https://github.com/BTP405/project-1-group-13-nbb/assets/122370310/aff44d82-70be-4fb1-b02a-819263f7bd41">
+</details>
+## Concatenation
 
-- mirroring
+Concatenation allows you to append 1 video to another video. Using this feature is simple. Dragging and dropping your first video will allow you to quickly preview the video before you drag and drop the second one.
 
-- colour inverting
+Next you want to input your output file name (leaving out the extension) and use the second drag and drop box to upload your second video for concatenation. Click "Process Video" and you will see "Running" on the top right corner. 
 
-- video trimming and
+Once the video is finished processing you will be able to view and download the video.
 
-- adjusting the video speed.
+## Invert Colors
 
-- These functions were all done by using pythons moviepy library. Other features are the ability to automatically save to database edited files under a user's name, and to be able to show all files that are in the database for one user. This was done by using GridFS to save the video files to the database, and using functions to sort through users and display the videos. The video editor allows the user to upload files from their desktops, then enter a users name, and do all of the moviepy functions mentioned above, allows them to write a name for their edited video file, and displays the completed video after editing and gives the option for downloading the file.
+Invert colors will take the video you upload and display the video with the colors inverted.
+Drag and drop your first video and once the video is displayed, type in a name for the inverted video and click "Process Video".
+
+Once the video is finished processing you will be able to view and download the video.
+
+## Adjust Speed
+
+Adust speed will allow you to upload a video, and input a "speed factor" which is a multiplier that you can use to adjust the speed.
+- for example a multiplier of 2.0x speed factor will double the speed of the video
+- A multiplier of 0.5x will make the video twice as long
+
+Once you've selected a speed factor, press "Process Video" and the video will be displayed and available for download upon completion.
+
+## Mirror Video
+
+Mirror Video is self explanatory. It flips the display of the video along the vertical axis so that whatever was on the left side of the video in the original iss now on the right and vice versa. Upload the video you want to mirror, give it's output a name, and click "Process Video". 
+
+Once the video is processed, you will be able to view and download the video.
+
+## Trim Video
+
+Trim video takes the video you input and allows you to cut it based off of the start and end time you give it.
+
+First upload a video and determine the time you would like your new video to begin at.
+At the moment the "Start time" and "End Time" fields only support time in seconds.
+
+So first you take the original video and determine the time you want the first cut to happen at and input that time in seconds in the "Start time" field. Then determine the ending time, also in seconds, and put that in the "End Time" field. Press "Process Video" and wait for it's completion to video and download the cut video.
+
+## Errors
+
+You may encounter the following errors
+### Connection Error Status 502
+
+This error happens if the application loses connection to the Streamlit Servers. Reloading the application by refreshing the page or clicking the options in the top right corner of the webpage and clicking "Rerun" will allow you to reconnect and try again
 
 ### Contributing
 
