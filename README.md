@@ -26,8 +26,15 @@ Note: We have used the free-teir for Render, hence sometimes it takes long to lo
 
 #### 2) On Docker
 To run the project on Docker, open up your Docker Account and run the following command:
+docker pull dockerjoshuad/video_viewer
 
-docker run -p 8501:8501dockerjoshuad/video_viewer 
+This will pull the docker container holding the video_viewer into your local docker system
+
+Next run:
+
+docker run -p 8501:8501 dockerjoshuad/video_viewer 
+
+Once you see that it is running you can type http://localhost into your browser and use the app run on docker 
 
 #### 3) Locally
 - navigate to the project folder
